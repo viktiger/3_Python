@@ -14,15 +14,12 @@ with open(csvpath, encoding='utf') as csvfile:
     csvreader = csv.reader(csvfile, delimiter=",")
     next(csvreader)
     
-    # Total vote counts
+    # Total votes & counts 
     count = 0 
-    # Total votes
     total = 0 
-    # Total candidates in election
+    # Total candidates & votes per candidate 
     candidates = []
-    # Total votes per candidate in election
     votes = []
-    # Total votes percentage per candidate in election
     votes_percentage = []
 
     for row in csvreader:
